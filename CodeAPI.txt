@@ -60,3 +60,24 @@ minecraft {
     	dependencies {
     		implementation fg.deobf("maven.modrinth:Project ID:Version ID")
     }
+
+// ----------------
+/* Pour Neo forge */
+// ----------------
+
+repositories {
+	// ... your other Maven repositories above, if any ...
+	maven {
+		url = "https://jitpack.io"
+	}
+}
+
+dependencies {
+	// ...
+    pehkui_version = 3.8.0-1.20.4-neoforge
+    implementation "com.github.Virtuoel:Pehkui:${pehkui_version}"
+}
+
+// https://github.com/Virtuoel/Pehkui/tree/neoforge/1.20.4
+
+
