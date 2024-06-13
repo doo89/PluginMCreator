@@ -1,14 +1,11 @@
 # PluginMCreator
 
-Test divers méthode, bientôt du freemaker
+//Test divers méthode, bientôt du freemaker
 
 
 	<#list data.getComponentsOfType("TextField") as component>
 	EditBox ${component.getName()};
 	</#list>
-
-
-
 <#macro buttonOnClick buttonName>
     e -> {
         if (<@procedureOBJToConditionCode component.displayCondition/>) {
